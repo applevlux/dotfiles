@@ -1,0 +1,103 @@
+{
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "theme.bar.floating": false,
+  "bar.battery.label": true,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "systray",
+        "kbinput",
+        "clock",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "menus.clock.time.military": false,
+  "menus.clock.weather.location": "Tallinn ",
+  "menus.clock.weather.unit": "metric",
+  "theme.bar.location": "top",
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.enableShadow": false,
+  "theme.bar.menus.monochrome": false,
+  "theme.bar.transparent": true,
+  "bar.autoHide": "never",
+  "theme.bar.border.width": "0.15em",
+  "theme.bar.buttons.separator.margins": "0.15em",
+  "theme.bar.buttons.separator.width": "0.1em",
+  "theme.bar.border.location": "none",
+  "theme.bar.buttons.y_margins": "0.2em",
+  "theme.bar.layer": "top",
+  "theme.bar.buttons.padding_x": "0.7rem",
+  "theme.bar.outer_spacing": "0.4em",
+  "menus.power.showLabel": true,
+  "menus.power.confirmation": true,
+  "wallpaper.pywal": true,
+  "wallpaper.image": "/home/maks/Pictures/Wallpapers/kipfel.jpg",
+  "theme.font.name": "Ubuntu Nerd Font",
+  "theme.font.label": "Ubuntu Nerd Font",
+  "tear": false,
+  "theme.font.weight": 600,
+  "menus.clock.time.hideSeconds": true,
+  "menus.clock.weather.enabled": false,
+  "menus.media.displayTimeTooltip": true,
+  "menus.media.displayTime": false,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": true,
+  "theme.bar.buttons.workspaces.enableBorder": false,
+  "bar.workspaces.workspaceMask": false,
+  "bar.workspaces.showWsIcons": false,
+  "theme.bar.buttons.windowtitle.enableBorder": false,
+  "theme.osd.orientation": "vertical",
+  "theme.osd.enable": true,
+  "theme.osd.location": "top right",
+  "menus.dashboard.stats.enable_gpu": true,
+  "menus.dashboard.shortcuts.enabled": false,
+  "theme.matugen": true,
+  "theme.matugen_settings.mode": "dark",
+  "theme.matugen_settings.scheme_type": "neutral",
+  "theme.matugen_settings.variation": "standard_2",
+  "theme.matugen_settings.contrast": 0.7,
+  "theme.bar.buttons.modules.worldclock.enableBorder": false,
+  "bar.clock.format": "%a %b %d  %I:%M%p"
+}
