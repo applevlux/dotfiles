@@ -1,8 +1,20 @@
 # Hopefully i dont break anything lol
+$runadmin = ([Security.Principal.WindowsPrincipal] `
+  [Security.Principal.WindowsIdentity]::GetCurrent() `
+).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
+if ($runadmin){
+    return
+}
+else {
+    Write-Output "Please run Script as Administrator"
+}
+Set-Location %USERPROFILE%\Downloads\ # just so we dont waste storage if were running this in system32 lol
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+Invoke-RestMethod get.scoop.sh -outfile 'install.ps1'
+.\install.ps1 -RunAsAdmin
+# install scoop
+scoop install git
 
-scoop bucket add extras versions
-scoop install fastfetch librewolf bitwarden lf neovim vesktop ungoogled-chromium vscode steam ente-auth youtube-music  
+git clone https://github.com/stdin82/htfx/releases/download/v0.0.24/Store-LTSC-2024-11-27.7z
