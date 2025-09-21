@@ -11,6 +11,6 @@ Get the __Windows 11 IoT Enterprise LTSC__ iso from <https://massgrave.dev/windo
 Afterwards once inside make sure to change __Time and currency format__ to _English (World)_,\
 Then reject the product activation (we'll get to it later) and select _Windows 11 IoT Enterprise LTSC_\
 And Format and install windows!\
-_Note: once inside the OOBE it will throw an error OOBEREGION or smth around those lines just skip it_\
+_Note: once inside the OOBE it will throw an error OOBEREGION or smth around those lines just skip it_
 
 TODO: make an actual script lol
