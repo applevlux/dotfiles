@@ -3,17 +3,17 @@
     {
       "Tablet": "Wacom CTL-672",
       "OutputMode": {
-        "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
+        "Path": "OpenTabletDriver.Desktop.Output.LinuxArtistMode",
         "Settings": [],
         "Enable": true
       },
       "Filters": [],
       "AbsoluteModeSettings": {
         "Display": {
-          "Width": 1920.0,
-          "Height": 1080.0,
-          "X": 960.0,
-          "Y": 540.00006,
+          "Width": 3000.0,
+          "Height": 1920.0,
+          "X": 1500.0,
+          "Y": 960.0,
           "Rotation": 0.0
         },
         "Tablet": {
