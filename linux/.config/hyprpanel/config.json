@@ -204,12 +204,13 @@
   "bar.layouts": {
     "0": {
       "left": [
-        "dashboard",
+        "volume",
+        "kbinput"
+      ],
+      "middle": [
         "workspaces"
       ],
       "right": [
-        "volume",
-        "kbinput",
         "clock",
         "notifications"
       ]
@@ -217,16 +218,15 @@
     "1": {
       "left": [
         "dashboard",
-        "workspaces",
+        "volume",
+        "bluetooth",
         "windowtitle"
       ],
       "middle": [
-        "media"
+        "workspaces"
       ],
       "right": [
-        "volume",
         "kbinput",
-        "bluetooth",
         "systray",
         "clock",
         "notifications"
@@ -251,7 +251,7 @@
   "menus.clock.time.military": false,
   "menus.clock.weather.location": "Tallinn ",
   "menus.clock.weather.unit": "metric",
-  "theme.bar.location": "top",
+  "theme.bar.location": "bottom",
   "theme.bar.buttons.enableBorders": false,
   "theme.bar.enableShadow": false,
   "theme.bar.menus.monochrome": false,
@@ -267,13 +267,13 @@
   "theme.bar.outer_spacing": "0.4em",
   "menus.power.showLabel": true,
   "menus.power.confirmation": true,
-  "wallpaper.pywal": true,
+  "wallpaper.pywal": false,
   "wallpaper.image": "/home/maks/Pictures/Wallpapers/RoCutie.png",
-  "theme.font.name": "Segoe UI Historic",
-  "theme.font.label": "Segoe UI Historic",
+  "theme.font.name": "System-ui",
+  "theme.font.label": "System-ui Condensed",
   "tear": true,
-  "theme.font.weight": 600,
-  "menus.clock.time.hideSeconds": true,
+  "theme.font.weight": 500,
+  "menus.clock.time.hideSeconds": false,
   "menus.clock.weather.enabled": false,
   "menus.media.displayTimeTooltip": false,
   "menus.media.displayTime": false,
@@ -282,10 +282,34 @@
   "theme.matugen_settings.mode": "dark",
   "theme.matugen_settings.scheme_type": "monochrome",
   "theme.bar.menus.opacity": 100,
-  "theme.matugen_settings.variation": "standard_1",
+  "theme.matugen_settings.variation": "monochrome_1",
   "theme.matugen_settings.contrast": 0.5,
   "bar.customModules.kbLayout.labelType": "code",
   "theme.bar.menus.enableShadow": false,
   "menus.dashboard.stats.enabled": false,
-  "menus.dashboard.directories.enabled": false
+  "menus.dashboard.directories.enabled": false,
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.osd.enable": true,
+  "bar.workspaces.show_icons": false,
+  "theme.bar.buttons.workspaces.enableBorder": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.workspaceMask": false,
+  "bar.workspaces.showWsIcons": true,
+  "bar.workspaces.showApplicationIcons": true,
+  "bar.workspaces.applicationIconOncePerWorkspace": true,
+  "theme.bar.buttons.windowtitle.enableBorder": false,
+  "bar.clock.format": "%a %b %d  %I:%M %p",
+  "bar.notifications.show_total": true,
+  "theme.bar.buttons.modules.worldclock.enableBorder": false,
+  "scalingPriority": "gdk",
+  "theme.bar.scaling": 90,
+  "theme.font.style": "normal",
+  "bar.workspaces.monitorSpecific": true,
+  "bar.workspaces.applicationIconMap": {
+    "[lL]ibrewolf": "󰈹",
+    "Com.github.th_ch.youtube.music": "󰗃",
+    "Bitwarden": "",
+    "Codium": ""
+  },
+  "menus.dashboard.shortcuts.enabled": false
 }
