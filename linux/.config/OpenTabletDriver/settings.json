@@ -1,4 +1,5 @@
 {
+  "Revision": "0.6.6.1",
   "Profiles": [
     {
       "Tablet": "Wacom CTL-672",
@@ -7,7 +8,26 @@
         "Settings": [],
         "Enable": true
       },
-      "Filters": [],
+      "Filters": [
+        {
+          "Path": "BezierInterpolator.BezierInterp",
+          "Settings": [
+            {
+              "Property": "SmoothingFactor",
+              "Value": 1.0
+            },
+            {
+              "Property": "TiltSmoothingFactor",
+              "Value": 1.0
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            }
+          ],
+          "Enable": true
+        }
+      ],
       "AbsoluteModeSettings": {
         "Display": {
           "Width": 3000.0,
@@ -45,7 +65,9 @@
         "AuxButtons": [],
         "MouseButtons": [],
         "MouseScrollUp": null,
-        "MouseScrollDown": null
+        "MouseScrollDown": null,
+        "DisablePressure": false,
+        "DisableTilt": false
       }
     }
   ],

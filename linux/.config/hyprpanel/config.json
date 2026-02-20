@@ -220,6 +220,8 @@
         "dashboard",
         "volume",
         "bluetooth",
+        "ram",
+        "cpu",
         "windowtitle"
       ],
       "middle": [
@@ -227,6 +229,7 @@
       ],
       "right": [
         "kbinput",
+        "cputemp",
         "systray",
         "clock",
         "notifications"
@@ -270,7 +273,7 @@
   "wallpaper.pywal": false,
   "wallpaper.image": "/home/maks/Pictures/Wallpapers/RoCutie.png",
   "theme.font.name": "System-ui",
-  "theme.font.label": "System-ui Condensed",
+  "theme.font.label": "System-ui",
   "tear": true,
   "theme.font.weight": 500,
   "menus.clock.time.hideSeconds": false,
@@ -308,8 +311,9 @@
   "bar.workspaces.applicationIconMap": {
     "[lL]ibrewolf": "󰈹",
     "Com.github.th_ch.youtube.music": "󰗃",
-    "Bitwarden": "",
-    "Codium": ""
+    "[bB]itwarden": "",
+    "[cC]odium": "",
+    "[dD]eadbeef": ""
   },
   "menus.dashboard.shortcuts.enabled": true,
   "theme.bar.buttons.style": "default",
@@ -391,5 +395,38 @@
   "theme.notification.text": "#ffffff",
   "theme.notification.labelicon": "#595959",
   "theme.notification.close_button.label": "#ffffff",
-  "theme.notification.close_button.background": "#e01b24"
+  "theme.notification.close_button.background": "#e01b24",
+  "bar.customModules.ram.label": true,
+  "bar.customModules.ram.labelType": "used/total",
+  "bar.customModules.ram.round": true,
+  "menus.dashboard.powermenu.shutdown": "hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'",
+  "menus.dashboard.powermenu.reboot": "hyprshutdown -t 'Restarting...' --post-cmd 'reboot'",
+  "menus.dashboard.powermenu.logout": "hyprshutdown -t 'Logging out' --post-cmd 'hyprctl dispatch exit'",
+  "bar.windowtitle.title_map": [
+    [
+      "[lL]ibrewolf",
+      "󰈹",
+      "Librewolf"
+    ],
+    [
+      "Com.github.th_ch.youtube.music",
+      "󰗃",
+      "YT Music"
+    ],
+    [
+      "[bB]itwarden",
+      "",
+      "Bitwarden"
+    ],
+    [
+      "[cC]odium",
+      "",
+      "Codium"
+    ],
+    [
+      "[dD]eadbeef",
+      "",
+      "DeaDBeeF"
+    ]
+  ]
 }
