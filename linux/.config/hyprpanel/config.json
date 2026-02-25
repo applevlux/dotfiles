@@ -218,8 +218,10 @@
     "1": {
       "left": [
         "dashboard",
+        "battery",
         "volume",
         "bluetooth",
+        "network",
         "ram",
         "cpu",
         "windowtitle"
@@ -228,7 +230,7 @@
         "workspaces"
       ],
       "right": [
-        "kbinput",
+        "",
         "cputemp",
         "systray",
         "clock",
@@ -251,20 +253,20 @@
       ]
     }
   },
-  "menus.clock.time.military": false,
+  "menus.clock.time.military": true,
   "menus.clock.weather.location": "Tallinn ",
   "menus.clock.weather.unit": "metric",
   "theme.bar.location": "bottom",
   "theme.bar.buttons.enableBorders": false,
   "theme.bar.enableShadow": false,
   "theme.bar.menus.monochrome": true,
-  "theme.bar.transparent": true,
+  "theme.bar.transparent": false,
   "bar.autoHide": "fullscreen",
   "theme.bar.border.width": "0.15em",
   "theme.bar.buttons.separator.margins": "0.15em",
   "theme.bar.buttons.separator.width": "0.1em",
   "theme.bar.border.location": "none",
-  "theme.bar.buttons.y_margins": "0.2em",
+  "theme.bar.buttons.y_margins": "0.05em",
   "theme.bar.layer": "top",
   "theme.bar.buttons.padding_x": "0.7rem",
   "theme.bar.outer_spacing": "0.4em",
@@ -301,10 +303,10 @@
   "bar.workspaces.showApplicationIcons": true,
   "bar.workspaces.applicationIconOncePerWorkspace": true,
   "theme.bar.buttons.windowtitle.enableBorder": false,
-  "bar.clock.format": "%a %b %d  %I:%M %p",
-  "bar.notifications.show_total": true,
+  "bar.clock.format": "%I:%M %p",
+  "bar.notifications.show_total": false,
   "theme.bar.buttons.modules.worldclock.enableBorder": false,
-  "scalingPriority": "gdk",
+  "scalingPriority": "both",
   "theme.bar.scaling": 90,
   "theme.font.style": "normal",
   "bar.workspaces.monitorSpecific": true,
@@ -369,7 +371,7 @@
   "theme.bar.menus.slider.background": "#1e1e1e",
   "theme.bar.menus.slider.backgroundhover": "#595959",
   "theme.bar.menus.slider.puck": "#1a1a1a",
-  "theme.bar.background": "#1a1a1a",
+  "theme.bar.background": "#1e1e1e",
   "theme.bar.buttons.monochrome": true,
   "theme.osd.opacity": 50,
   "theme.osd.border.color": "#ffffff",
@@ -428,5 +430,22 @@
       "",
       "DeaDBeeF"
     ]
-  ]
+  ],
+  "bar.customModules.netstat.dynamicIcon": true,
+  "bar.customModules.updates.extendedTooltip": true,
+  "bar.customModules.updates.autoHide": true,
+  "bar.customModules.weather.unit": "metric",
+  "bar.network.showWifiInfo": true,
+  "bar.network.label": false,
+  "theme.bar.buttons.systray.enableBorder": false,
+  "bar.clock.icon": "󰸗",
+  "bar.clock.showIcon": false,
+  "bar.clock.showTime": true,
+  "theme.bar.buttons.clock.spacing": "0",
+  "bar.launcher.autoDetectIcon": false,
+  "theme.bar.border.color": "#cccccc",
+  "theme.bar.buttons.borderColor": "#cccccc",
+  "menus.power.lowBatteryNotification": true,
+  "theme.bar.buttons.spacing": "0.15em",
+  "bar.notifications.hideCountWhenZero": false
 }
