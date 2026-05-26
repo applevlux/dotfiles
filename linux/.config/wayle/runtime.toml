@@ -1,0 +1,49 @@
+[general]
+font-sans = "Noto Sans"
+font-mono = "Noto Sans Mono"
+tearing-mode = true
+
+[bar]
+location = "bottom"
+bg = "transparent"
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    "power",
+    "battery",
+    "network",
+    "bluetooth",
+    "keyboard-input",
+]
+center = ["hyprland-workspaces"]
+right = [
+    "systray",
+    "clock",
+    "microphone",
+    "volume",
+    "notifications",
+]
+
+[styling.palette]
+bg = "#000000"
+surface = "#000000"
+fg-muted = "#77767b"
+primary = "#ffffff"
+red = "#deddda"
+yellow = "#c0bfbc"
+green = "#9a9996"
+blue = "#f6f5f4"
+
+[modules.hyprland-workspaces]
+show-special = false
+display-mode = "icon"
+numbering = "relative"
+app-icons-show = true
+
+[modules.keyboard-input]
+icon-show = false
+
+[modules.notification]
+popup-position = "bottom-right"
