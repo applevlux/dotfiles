@@ -37,6 +37,7 @@ green = "#9a9996"
 blue = "#f6f5f4"
 
 [modules.hyprland-workspaces]
+min-workspace-count = 5
 show-special = false
 display-mode = "icon"
 numbering = "relative"
@@ -45,5 +46,13 @@ app-icons-show = true
 [modules.keyboard-input]
 icon-show = false
 
+[modules.keyboard-input.layout-alias-map]
+Estonian = "EE"
+Russian = "RU"
+"English (US)" = "EN"
+
 [modules.notification]
 popup-position = "bottom-right"
+
+[osd]
+position = "right"

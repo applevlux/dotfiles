@@ -10,3 +10,4 @@ hl.env("XCURSOR_SIZE","24")
 hl.env("XCURSOR_THEMZE","Posy_Cursor_Black")
 hl.env("HYPRCURSOR_THEME","Posys-Cursor-Scalable")
 hl.env("HYPRCURSOR_SIZE","24")
+
