@@ -11,7 +11,7 @@ bg = "transparent"
 monitor = "*"
 show = true
 left = [
-    "power",
+    "dashboard",
     "battery",
     "network",
     "bluetooth",
@@ -26,6 +26,19 @@ right = [
     "notifications",
 ]
 
+[[bar.layout]]
+monitor = "DP-2"
+show = true
+left = []
+center = []
+right = [
+    "hyprland-workspaces",
+    "keyboard-input",
+    "clock",
+    "volume",
+    "notifications",
+]
+
 [styling.palette]
 bg = "#000000"
 surface = "#000000"
@@ -36,8 +49,14 @@ yellow = "#c0bfbc"
 green = "#9a9996"
 blue = "#f6f5f4"
 
+[modules.dashboard]
+dropdown-lock-command = "hyprlock"
+dropdown-logout-command = "hyprshutdown"
+dropdown-reboot-command = "systemctl reboohyprshutdown -t 'Restarting...' --post-cmd 'reboot'"
+dropdown-poweroff-command = "hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0 --no-wall'"
+
 [modules.hyprland-workspaces]
-min-workspace-count = 5
+min-workspace-count = 10
 show-special = false
 display-mode = "icon"
 numbering = "relative"
@@ -47,11 +66,11 @@ app-icons-show = true
 icon-show = false
 
 [modules.keyboard-input.layout-alias-map]
+"English (US)" = "EN"
 Estonian = "EE"
 Russian = "RU"
-"English (US)" = "EN"
 
-[modules.notification]
+[modules.notifications]
 popup-position = "bottom-right"
 
 [osd]

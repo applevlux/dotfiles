@@ -30,11 +30,11 @@ hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
 -- Workspaces switching Win + 1-5
-for i = 1, 5 do
-    local key = i
-    hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
-    hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
-end
+--for i = 1, 5 do
+--    local key = i
+--    hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
+--    hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
+--end
 
 -- Window movement across workspace Win + Shift = LRUD
 hl.bind(mainMod .. " + SHIFT + left",  hl.dsp.window.move({ direction = "left" }))

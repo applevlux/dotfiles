@@ -26,4 +26,5 @@ require("Modular/animations")
 require("Modular/tearing")
 require("Modular/misc")
 require("Modular/externalbinds")
+require("Modular/smw")
 
